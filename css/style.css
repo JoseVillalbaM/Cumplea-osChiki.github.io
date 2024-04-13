@@ -1,0 +1,433 @@
+body, html {
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: linear-gradient(180deg, #233A4E ,#9C6DB0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-video{
+    display: flex;
+    margin: 70px;
+    top: -270px;
+    width: 300px;
+    height: 150px;
+    background: transparent;
+    position: relative;
+  
+    
+  }
+  .container-video video{
+    width: 100%;
+    height: auto;
+  }
+  canvas {
+    position: absolute;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+  }
+  
+  
+  @keyframes fall {
+    0% { top: -20%; }
+    100% { top: 110%; }
+  }
+
+.card-container {
+     margin: 0 auto;
+     max-width: 600px;
+     perspective: 1000px;
+     width: 400px;
+     height: 200px;
+    
+ 
+     
+   }
+   .card {
+     width: 100%;
+     height: 100%;
+     position: relative;
+     transform-style: preserve-3d;
+     transition: transform 10s;
+     -webkit-transition: transform 10s;
+     -moz-transition: transform 10s;
+     -ms-transition: transform 10s;
+     -o-transition: transform 10s;
+}
+   .card-face {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+     border-radius: 10px;
+     color: white;
+     text-align: center;
+     font-family: 'Arial', sans-serif;
+     background-color: #233A4E;
+   }
+   .card-front {
+     
+     background: linear-gradient(180deg, #c46efad6, #df94af, #7e6ccf, #ff46ff85);
+   }
+   .card-back {
+        
+        background: linear-gradient(45deg, #005aff, #00ff9e, #ff005a, #9e00ff);
+        transform: rotateY(180deg);
+     
+}
+.good-day{
+        
+    
+    font-family: 'Indie Flower', cursive;;
+    font-size: 1em;
+    animation: light-effect 1.5s ease-in-out infinite alternate;
+}
+@keyframes light-effect {
+        from { text-shadow: 0 0 10px rgb(42, 64, 64); }
+        to { text-shadow: 0 0 10px bl, 0 0 30px rgb(171, 79, 79)}
+      }
+    
+ 
+   .gift-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 10px;
+     margin: 5px;
+     padding: 5px;
+
+   }
+   .gift-icon {
+    margin: 0 auto;
+     width: 40px;
+     height: 40px;
+     background-size: cover;
+     transition: transform 0.3s;
+   }
+   .gift-icon:hover {
+     transform: scale(2.1);
+     cursor: pointer;
+     pointer-events: unset;
+   }
+ 
+   .btn-return {
+     display: flex;
+     width: 100%;
+     margin: 10px;
+     justify-content: center;
+     cursor: pointer;
+     
+   }
+ 
+   .modal {
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     border-radius: 10px;
+     cursor: pointer;
+     background-color: rgba(0,0,0,0.6);
+    
+   }
+   .modal-content {
+    
+     background-color: whitesmoke;
+     margin: 15% auto;
+     padding: 20px;
+     border: 1px solid #888;
+     width: 80%;
+     text-align: center;
+   }
+ .modal-content p{
+    font-size:15px;
+    font-family: 'Indie Flower', cursive;;
+    font-size: 1em;
+ }
+   
+ 
+ 
+
+  .cake{
+      margin: 0 auto;
+      font-size: 50px;
+  }
+
+     
+  
+  .balloon {
+      position: absolute;
+      width: 80px;
+      height: 110px;
+      border-radius: 50%;
+      box-shadow: inset -5px -5px 0 rgba(0, 0, 0, 0.07);
+      animation: float 5s linear forwards;
+      z-index: -1;
+  }
+  
+  .balloon span {
+ 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      text-align: center;
+  }
+  .balloon:nth-child(1) {
+      
+      background: white;
+      z-index: 100;
+      
+      
+  }
+  .balloon:nth-child(2) {
+      
+      background: violet;
+      z-index: 100;
+      
+      
+  }
+  .balloon:nth-child(3) {
+      
+      background: greenyellow;
+      z-index: 100;
+      
+      
+  }
+  .balloon:nth-child(4) {
+      
+      background: green;
+      z-index: 100;
+      
+      
+  }
+  .balloon:nth-child(5) {
+     
+      background: rosybrown;
+      z-index: 100;
+      
+      
+  }
+  .balloon:nth-child(6) {
+     
+      background: grey;
+      z-index: 100;
+      
+      
+  }
+  .balloon:nth-child(7) {
+     
+      background: orqnge;
+      z-index: 100;
+      
+      
+  }
+  .balloon:nth-child(8) {
+     
+      background: red;
+      z-index: 100;
+      
+      
+  }
+  
+  
+  
+  
+  .balloon:nth-child(1)::after {
+      content: "";
+      color: black;
+      font-family: 'monaco', sans-serif; 
+      font-size: 20px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+      
+      
+  }
+  
+  .balloon:nth-child(2)::after {
+      content: "";
+      color: black;
+      font-family: 'monaco', sans-serif; 
+      font-size: 20px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+      
+      
+  }
+  
+  .balloon:nth-child(3)::after {
+      content: "";
+      color: black;
+      font-family: 'monaco', sans-serif; 
+      font-size: 20px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      white-space: nowrap;
+      
+    
+  }
+  .balloon:nth-child(4)::after {
+      content: "";
+      color: black;
+      font-family: 'monaco', sans-serif; 
+      font-size: 20px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+  }
+  .balloon:nth-child(5)::after {
+      content: "";
+      color: black;
+      font-family: 'monaco', sans-serif; 
+      font-size: 10px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+  
+  }
+  .balloon:nth-child(6)::after {
+      content: "";
+      color: black;
+      font-family: 'monaco', sans-serif; 
+      font-size: 20px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+  }
+  .balloon:nth-child(7)::after {
+      content: "";
+      font-family: 'monaco', sans-serif; 
+      font-size: 10px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+  }
+  
+  .balloon:nth-child(8)::after {
+      content: "";
+      font-family: 'monaco', sans-serif; 
+      font-size: 15px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+  }
+  .balloon:nth-child(9)::after {
+      content: "";
+      font-family: 'monaco', sans-serif; 
+      font-size: 15px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+  }
+  .balloon:nth-child(10)::after {
+      content: "";
+      font-family: 'monaco', sans-serif; 
+      font-size: 15px; 
+      font-weight: bold; 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+      text-align: center;
+      white-space: nowrap;
+  }
+  
+  .balloon::after {
+      content: ""; 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white; 
+      font-family: 'monaco', sans-serif; 
+      font-size: 8px; 
+      text-align: center;
+      white-space: nowrap;
+  }
+  .balloon::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      background-color: grey;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  @keyframes float {
+      0% {
+          transform: translateY(50vh); /* Start below the screen */
+          opacity: 0;
+      }
+      100% {
+          transform: translateY(0vh); /* End at the top of the screen */
+          opacity: 1;
+      }
+  }
+  
+  .balloon:nth-of-type(1) { animation-delay: 0s; }
+  .balloon:nth-of-type(2) { animation-delay: 0.5s; }
+  .balloon:nth-of-type(3) { animation-delay: 1s; }
+  .balloon:nth-of-type(4) { animation-delay: 1.5s; }
+  .balloon:nth-of-type(5) { animation-delay: 2s; }
+  .balloon:nth-of-type(6) { animation-delay: 2.5s; }
+  .balloon:nth-of-type(7) { animation-delay: 3s; }
+  .balloon:nth-of-type(8) { animation-delay: 3.5s; }
+  .balloon:nth-of-type(9) { animation-delay: 4s; }
+  .balloon:nth-of-type(10) { animation-delay: 4.5s; }
+  
+  
+  .balloon {
+    /* ... */
+    animation: float 8s linear infinite;
+    background: linear-gradient(25deg, hsla(300, 100%, 75%, 1), hsla(248, 100%, 85%, 1));
+    animation-delay: random(10, 20); 
+  }
+  
+  .gradient-1 {
+      background: linear-gradient(180deg, hsla(5, 80%, 60%, 1), hsla(15, 90%, 70%, 1));
+  }
+  
+  .gradient-2 {
+      background: linear-gradient(180deg, hsla(35, 80%, 60%, 1), hsla(45, 90%, 70%, 1));
+  }
+  
+  .gradient-3 {
+      background: linear-gradient(180deg, hsla(135, 80%, 60%, 1), hsla(145, 90%, 70%, 1));
+  }
+  
+  .gradient-4 {
+      background: linear-gradient(180deg, hsla(185, 80%, 60%, 1), hsla(195, 90%, 70%, 1));
+  }
+  
+  .gradient-5 {
+      background: linear-gradient(180deg, hsla(235, 80%, 60%, 1), hsla(245, 90%, 70%, 1));
+  }
+  
+  
+  
+  
+    .animated-text {
+      font-family: 'Indie Flower', cursive;;
+      font-size: 1.7em;
+      animation: light-effect 1.5s ease-in-out infinite alternate;
+    }
+    @keyframes light-effect {
+      from { text-shadow: 0 0 10px rgb(42, 64, 64); }
+      to { text-shadow: 0 0 10px bl, 0 0 30px rgb(171, 79, 79)}
+    }
+  
